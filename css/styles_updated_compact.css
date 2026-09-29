@@ -1552,13 +1552,16 @@ section {
 }
 
 .impact-item {
-    min-height: 210px;
+    min-height: 165px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 
-    padding: 30px;
+    gap: 18px;
+
+    padding: 24px;
 
     border: 1px solid var(--border);
     border-radius: var(--radius-medium);
@@ -1570,36 +1573,69 @@ section {
         background 0.25s ease;
 }
 
-.impact-item:hover {
-    transform: translateY(-4px);
+.impact-item i {
+    margin: 0;
 
-    background: var(--ice-light);
+    flex: 0 0 auto;
+
+    color: var(--teal);
+    font-size: 1.8rem;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    align-items: stretch;
+}
+
+.impact-item {
+    height: 105px;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+    padding: 12px 18px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: var(--surface);
 }
 
 .impact-item i {
-    margin-bottom: 26px;
+    margin: 0;
+    flex: 0 0 auto;
 
     color: var(--teal);
-
-    font-size: 1.65rem;
+    font-size: 2.65rem;
 }
 
-.impact-item strong {
+.impact-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.impact-copy strong {
     color: var(--navy-dark);
 
-    font-size: clamp(2.1rem, 3vw, 3rem);
-
-    line-height: 1;
+    font-size: 2.55rem;
+    font-weight: 750;
+    line-height: 0.95;
 }
 
-.impact-item span {
-    margin-top: 9px;
+.impact-copy span {
+    margin-top: 7px;
 
     color: var(--text-muted);
-
     font-size: 0.78rem;
+    line-height: 1.2;
 }
-
 
 
 /* ==========================================================
@@ -2277,31 +2313,58 @@ section {
     padding: 17px 0;
 }
 
-/* IMPACT: compact horizontal band rather than a large empty section */
+/* IMPACT: compact horizontal KPI band */
 .impact-section {
-    padding: 68px 0 76px;
+    padding: 58px 0 64px;
 }
 
 .impact-section .section-header {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
+    align-items: stretch;
 }
 
-.impact-item {
-    min-height: 165px;
-    padding: 24px;
+/* Final desktop KPI rule: intentionally overrides earlier impact-item declarations. */
+.impact-grid .impact-item {
+    height: 112px;
+    min-height: 112px;
+    padding: 10px 18px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.impact-item i {
-    margin-bottom: 17px;
-    font-size: 1.45rem;
+.impact-grid .impact-item i {
+    margin: 0;
+    flex: 0 0 auto;
+    font-size: 2.75rem;
+    line-height: 1;
 }
 
-.impact-item strong {
-    font-size: clamp(1.95rem, 2.7vw, 2.7rem);
+.impact-grid .impact-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.impact-grid .impact-copy strong {
+    font-size: clamp(2.1rem, 2.5vw, 2.6rem);
+    line-height: 0.95;
+}
+
+.impact-grid .impact-copy span {
+    margin-top: 6px;
+    font-size: 0.78rem;
+    line-height: 1.2;
 }
 
 /* CTA: still visually distinct, but no longer oversized */
@@ -2398,6 +2461,36 @@ section {
     }
 }
 
+
+
+/* Final responsive KPI sizing */
+@media (max-width: 950px) {
+    .impact-grid .impact-item {
+        height: 108px;
+        min-height: 108px;
+        padding: 10px 16px;
+    }
+
+    .impact-grid .impact-item i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .impact-grid .impact-item {
+        height: 105px;
+        min-height: 105px;
+        padding: 10px 14px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-grid .impact-item {
+        height: 100px;
+        min-height: 100px;
+    }
+}
 
 /* ==========================================================
    25. ACCESSIBILITY — REDUCED MOTION
