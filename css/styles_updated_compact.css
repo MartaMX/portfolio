@@ -2072,6 +2072,333 @@ section {
 
 
 
+
+/* ==========================================================
+   25. DENSITY + TYPOGRAPHY REFINEMENT
+   Compact desktop rhythm while preserving the existing design.
+========================================================== */
+
+/* Slightly wider content area = less unused side space */
+:root {
+    --page-width: 1240px;
+}
+
+.page-container,
+.nav-container {
+    width: min(var(--page-width), 92%);
+}
+
+/* Shared section labels: FEATURED PROJECTS / ABOUT / IMPACT */
+.projects-header {
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.projects-header h2 {
+    font-size: clamp(1.7rem, 2.2vw, 2.15rem);
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    line-height: 1;
+}
+
+/* HERO: keep the composition, remove excess vertical breathing room */
+.hero {
+    min-height: auto;
+}
+
+.hero-grid {
+    gap: 56px;
+    padding-top: 58px;
+    padding-bottom: 72px;
+}
+
+.hero-visual {
+    min-height: 410px;
+}
+
+.data-orbit {
+    width: min(420px, 37vw);
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+}
+
+.hero-lead {
+    margin-top: 26px;
+}
+
+.hero-description {
+    margin-top: 14px;
+    line-height: 1.58;
+}
+
+.hero-actions {
+    margin-top: 27px;
+}
+
+/* PROJECTS: materially tighter section rhythm */
+.projects-section {
+    padding: 72px 0 82px;
+}
+
+.featured-project {
+    grid-template-columns: 0.88fr 1.12fr;
+    min-height: 455px;
+}
+
+.featured-project-content {
+    padding: 42px 36px 42px 46px;
+}
+
+.featured-index {
+    margin-bottom: 13px;
+}
+
+/* Uber title was visually overpowering */
+.featured-project h3 {
+    font-size: clamp(2.35rem, 3.35vw, 3.35rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+.project-description {
+    margin: 20px 0 21px;
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.project-actions {
+    margin-top: 25px;
+}
+
+/* Keep the right visual comfortably inside the tile */
+.featured-visual {
+    width: 100%;
+    align-self: center;
+    min-width: 0;
+    padding: 32px 34px 32px 8px;
+}
+
+.analytics-card {
+    padding: 14px;
+    border-radius: 18px;
+}
+
+.analytics-kpis {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.analytics-kpi {
+    min-height: 92px;
+    padding: 16px 18px;
+}
+
+.kpi-value {
+    margin-bottom: 6px;
+    font-size: 1.65rem;
+}
+
+.analytics-chart {
+    padding: 21px 22px 19px;
+}
+
+.chart-heading {
+    margin-bottom: 20px;
+}
+
+.outcome-bar {
+    margin-bottom: 21px;
+}
+
+.outcome-grid {
+    gap: 14px 18px;
+}
+
+/* Secondary project cards: reduce empty card height and internal padding */
+.project-grid {
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.project-card {
+    min-height: 455px;
+    padding: 24px;
+}
+
+.project-chart {
+    height: 128px;
+}
+
+.project-card h3 {
+    margin: 18px 0 10px;
+    font-size: 1.35rem;
+}
+
+.project-card > p:not(.project-index) {
+    margin-bottom: 17px;
+    line-height: 1.52;
+}
+
+.project-card .project-tags {
+    margin-bottom: 18px;
+}
+
+/* ABOUT: denser, more balanced two-column section */
+.about-section {
+    padding: 72px 0 78px;
+}
+
+.about-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 58px;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+    font-size: clamp(2.35rem, 3.6vw, 3.65rem);
+}
+
+.about-content p {
+    margin-bottom: 14px;
+    line-height: 1.58;
+}
+
+.skills-panel {
+    padding: 28px;
+}
+
+.skills-title {
+    margin-bottom: 18px;
+}
+
+.skill-category {
+    padding: 17px 0;
+}
+
+/* IMPACT: compact horizontal band rather than a large empty section */
+.impact-section {
+    padding: 68px 0 76px;
+}
+
+.impact-section .section-header {
+    margin-bottom: 30px;
+}
+
+.impact-grid {
+    gap: 14px;
+}
+
+.impact-item {
+    min-height: 165px;
+    padding: 24px;
+}
+
+.impact-item i {
+    margin-bottom: 17px;
+    font-size: 1.45rem;
+}
+
+.impact-item strong {
+    font-size: clamp(1.95rem, 2.7vw, 2.7rem);
+}
+
+/* CTA: still visually distinct, but no longer oversized */
+.contact-section {
+    padding: 82px 0 88px;
+}
+
+.contact-section .section-label {
+    margin-bottom: 18px;
+}
+
+.contact-section h2 {
+    font-size: clamp(3rem, 5.1vw, 5.1rem);
+}
+
+.contact-section p:not(.section-label) {
+    margin-top: 21px;
+}
+
+.contact-actions {
+    margin-top: 27px;
+}
+
+/* Footer */
+.footer-content {
+    min-height: 66px;
+}
+
+/* Desktop-only density refinements should not fight mobile layouts */
+@media (max-width: 950px) {
+    .page-container,
+    .nav-container {
+        width: 90%;
+    }
+
+    .projects-header h2 {
+        font-size: 1.55rem;
+    }
+
+    .featured-project {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-visual {
+        padding: 0 42px 42px;
+    }
+
+    .project-card {
+        min-height: 440px;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-container,
+    .nav-container {
+        width: 88%;
+    }
+
+    .projects-header {
+        margin-bottom: 26px;
+    }
+
+    .projects-header h2 {
+        font-size: 1.35rem;
+        letter-spacing: 0.14em;
+    }
+
+    .projects-section,
+    .about-section,
+    .impact-section {
+        padding-top: 62px;
+        padding-bottom: 68px;
+    }
+
+    .featured-project-content {
+        padding: 30px;
+    }
+
+    .featured-project h3 {
+        font-size: 2.35rem;
+    }
+
+    .featured-visual {
+        padding: 0 24px 28px;
+    }
+
+    .project-card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .contact-section {
+        padding: 72px 0;
+    }
+}
+
+
 /* ==========================================================
    25. ACCESSIBILITY — REDUCED MOTION
 ========================================================== */

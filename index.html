@@ -1,59 +1,1018 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo_purple.png">
+    <meta
+        name="description"
+        content="Portfolio of Marta Guzmán — Product, Data and Digital Technology."
+    >
 
     <title>Marta Guzmán | Product · Data · Digital Technology</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles_updated_compact.css">
+    
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/favicon.png"
+    >
+
 </head>
+
 
 <body>
 
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a
+                class="logo"
+                href="#home"
+                aria-label="Go to homepage"
+            >
+                <img
+                    src="assets/images/logo-navbar-cropped.png"
+                    alt="Marta Guzmán logo"
+                >
+            </a>
+
+
+            <nav class="nav-links" aria-label="Main navigation">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#impact">
+                    Impact
+                </a>
+
+            </nav>
+
+
+            <a
+                class="nav-cta"
+                href="#contact"
+            >
+                Get in touch
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+
     <main>
-        <section class="hero">
-            <p class="eyebrow">PRODUCT · DATA · DIGITAL TECHNOLOGY</p>
 
-            <h1>Hi, I'm Marta.</h1>
 
-            <h2>
-                I turn complex business problems into
-                digital products, analytics and actionable decisions.
-            </h2>
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-            <p>
-                Product professional and data analyst based in Amsterdam,
-                combining 10+ years of business and technology experience
-                with hands-on analytics and software development.
-            </p>
+        <section
+            class="hero"
+            id="home"
+        >
 
-            <div class="hero-links">
-                <a href="#projects">View my work</a>
-                <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a>
-                <a href="YOUR_GITHUB_URL" target="_blank">GitHub</a>
+            <!-- Decorative background elements -->
+            <div
+                class="hero-shape hero-shape-left"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-shape hero-shape-right"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="page-container hero-grid">
+
+
+                <!-- Hero text -->
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        PRODUCT · DATA · DIGITAL TECHNOLOGY
+                    </p>
+
+
+                    <h1>
+                        From data<br>
+                        to <span>what's next.</span>
+                    </h1>
+
+
+                    <p class="hero-lead">
+                        Hi, I transform data into insights, products and
+                        practical solutions that create real impact.
+                    </p>
+
+
+                    <p class="hero-description">
+                        Product professional and data analyst with 10+ years
+                        of experience in business and technology, combining
+                        analytical thinking with hands-on development.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <!-- Replace with your LinkedIn URL -->
+
+                        <a
+                            class="social-link"
+                            href="https://linkedin.com/in/martaguzmancabrera"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+
+                        <!-- Replace with your GitHub URL -->
+
+                        <a
+                            class="social-link"
+                            href="https://github.com/MartaMX"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+
+
+                        <a
+                            class="button button-primary"
+                            href="#contact"
+                        >
+                            Get in touch
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero data visual -->
+
+                <div
+                    class="hero-visual"
+                    aria-hidden="true"
+                >
+
+                    <div class="data-orbit">
+
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+
+                        <span class="orbit-point orbit-point-one"></span>
+                        <span class="orbit-point orbit-point-two"></span>
+
+                        <div class="orbit-message">
+                            <span>Data insights</span>
+                            <span>Better products</span>
+                            <span>Real impact</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
+
+
+            <a
+                class="scroll-indicator"
+                href="#projects"
+            >
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
         </section>
 
-        <section id="projects">
-            <h2>Selected Work</h2>
 
-            <article>
-                <h3>Uber Rides Analytics Platform</h3>
 
-                <p>
-                    An end-to-end analytics platform transforming
-                    150,000 ride bookings into business insights,
-                    interactive analytics and predictive experiments.
-                </p>
+        <!-- =================================================
+             FEATURED PROJECTS
+        ================================================== -->
 
-                <p>
-                    Python · SQL · Streamlit · Machine Learning · Gemini · Azure
-                </p>
-            </article>
+        <section
+            class="projects-section"
+            id="projects"
+        >
+
+            <div class="page-container">
+
+
+                <!-- Section header -->
+
+                <div class="section-header projects-header">
+
+                    <h2>
+                        FEATURED PROJECTS
+                    </h2>
+
+                </div>
+
+                
+                <!-- =========================================
+                     FEATURED PROJECT — UBER
+                ========================================== -->
+
+                <article class="featured-project">
+
+                    <div class="featured-project-content">
+
+                        <p class="project-index featured-index">
+                            01
+                        </p>
+
+
+                        <h3>
+                            Uber Rides Analysis:<br>The Data Behind the Journey
+                        </h3>
+
+
+                        <p class="project-description">
+                            What can 150K Uber rides reveal about why journeys
+                            succeed, fail, and generate value? I turned raw data
+                            into an end-to-end analytics product, uncovering
+                            patterns in demand, cancellations, revenue, and
+                            performance using Python, SQL, ML, Streamlit,
+                            Azure, and GenAI.
+                        </p>
+
+
+                        <div
+                            class="project-tags"
+                            aria-label="Technologies used"
+                        >
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Streamlit</span>
+                            <span>Machine Learning</span>
+                            <span>Azure</span>
+                            <span>GenAI</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <!-- Replace with repository URL -->
+
+                            <a
+                                class="button button-primary"
+                                href="https://github.com/MartaMX/uber-rides-analysis"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View project
+                                <span>↗</span>
+                            </a>
+
+
+                            <a
+                                class="button button-secondary"
+                                href="https://uber-rides-analysis-ekb6d6aqfzhwc6dm.westeurope-01.azurewebsites.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live dashboard
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Uber project visual -->
+                     <div class="featured-visual">
+
+                        <div class="analytics-card">
+
+                            <!-- KPI row -->
+                            <div class="analytics-kpis">
+
+                                <div class="analytics-kpi">
+                                    <span class="kpi-value">150K</span>
+                                    <span class="kpi-label">Ride bookings</span>
+                                </div>
+
+                                <div class="analytics-kpi">
+                                    <span class="kpi-value">62%</span>
+                                    <span class="kpi-label">Completion rate</span>
+                                </div>
+
+                                <div class="analytics-kpi">
+                                    <span class="kpi-value">29.15 min</span>
+                                    <span class="kpi-label">Avg. CTAT</span>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Visualization -->
+                            <div class="analytics-chart">
+
+                                <div class="chart-heading">
+                                    <div>
+                                        <span class="chart-eyebrow">BOOKING OUTCOMES</span>
+                                        <h4>What happened to 150K bookings?</h4>
+                                    </div>
+
+                                    <span class="chart-note">Bengaluru</span>
+                                </div>
+
+
+                                <!-- 100% stacked bar -->
+                                <div class="outcome-bar">
+                                    <div class="outcome completed" style="width: 62%"></div>
+                                    <div class="outcome driver-cancelled" style="width: 18%"></div>
+                                    <div class="outcome customer-cancelled" style="width: 7%"></div>
+                                    <div class="outcome no-driver" style="width: 7%"></div>
+                                    <div class="outcome incomplete" style="width: 6%"></div>
+                                </div>
+
+
+                                <!-- Outcome details -->
+                                <div class="outcome-grid">
+
+                                    <div class="outcome-item">
+                                        <span class="outcome-dot completed-dot"></span>
+                                        <div>
+                                            <strong>62%</strong>
+                                            <span>Completed</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="outcome-item">
+                                        <span class="outcome-dot driver-dot"></span>
+                                        <div>
+                                            <strong>18%</strong>
+                                            <span>Driver cancelled</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="outcome-item">
+                                        <span class="outcome-dot customer-dot"></span>
+                                        <div>
+                                            <strong>7%</strong>
+                                            <span>Customer cancelled</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="outcome-item">
+                                        <span class="outcome-dot no-driver-dot"></span>
+                                        <div>
+                                            <strong>7%</strong>
+                                            <span>No driver found</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="outcome-item">
+                                        <span class="outcome-dot incomplete-dot"></span>
+                                        <div>
+                                            <strong>6%</strong>
+                                            <span>Incomplete</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                </article>
+
+
+
+                <!-- =========================================
+                     SECONDARY PROJECTS
+                ========================================== -->
+
+                <div class="project-grid">
+
+
+                    <!-- A/B TESTING -->
+
+                    <article class="project-card">
+
+                        <p class="project-index featured-index">
+                            02
+                        </p>
+
+
+
+                        <div
+                            class="project-chart bar-chart"
+                            aria-hidden="true"
+                        >
+
+                            <span style="--bar-height: 32%;"></span>
+                            <span style="--bar-height: 46%;"></span>
+                            <span style="--bar-height: 58%;"></span>
+                            <span style="--bar-height: 50%;"></span>
+                            <span style="--bar-height: 82%;"></span>
+
+                        </div>
+
+
+                        <h3>
+                            Vanguard A/B Test:<br>Beyond the Conversion Rate
+                        </h3>
+
+
+                        <p>
+                            When an experiment improves conversion, is the
+                            answer automatically “ship it”? I explored how
+                            performance varied across customer groups to turn
+                            experiment results into a more nuanced product
+                            decision.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>A/B Testing</span>
+                            <span>Statistics</span>
+                            <span>Tableau</span>
+
+                        </div>
+
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/MartaMX/vanguard-ab-test"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View project
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- AMSTERDAM HOUSING -->
+
+                    <article class="project-card">
+
+                        <p class="project-index featured-index">
+                            03
+                        </p>
+
+
+                        <div
+                            class="project-chart scatter-chart"
+                            aria-hidden="true"
+                        >
+
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                            <span class="dot dot-4"></span>
+                            <span class="dot dot-5"></span>
+                            <span class="dot dot-6"></span>
+                            <span class="dot dot-7"></span>
+                            <span class="dot dot-8"></span>
+                            <span class="dot dot-9"></span>
+
+                        </div>
+
+
+                        <h3>
+                            Amsterdam Real Estate:<br>The Price of Location
+                        </h3>
+
+
+                        <p>
+                            What does the price of an Amsterdam home really
+                            buy you? I combined housing, geospatial, and public
+                            data to explore how access to services varies
+                            across the city and how location shapes value.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>GeoPandas</span>
+                            <span>APIs</span>
+                            <span>Spatial Analysis</span>
+
+                        </div>
+
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/fran26m/project_3_housing_ams"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View project
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- WINE -->
+
+                    <article class="project-card">
+
+                        <p class="project-index featured-index">
+                            04
+                        </p>
+
+
+                        <div
+                            class="project-chart line-chart"
+                            aria-hidden="true"
+                        >
+
+                            <svg
+                                viewBox="0 0 300 120"
+                                preserveAspectRatio="none"
+                            >
+
+                                <polyline
+                                    points="
+                                        0,100
+                                        40,94
+                                        75,88
+                                        110,72
+                                        145,78
+                                        180,55
+                                        220,48
+                                        260,28
+                                        300,20
+                                    "
+                                ></polyline>
+
+                            </svg>
+
+                        </div>
+
+
+                        <h3>
+                            Wine Quality: <br> From Chemistry to Prediction
+                        </h3>
+
+
+                        <p>
+                            What makes a wine score higher—or lower? Using Python, statistical analysis, regression-classification models and machine learning, I explored the chemistry behind wine quality—turning chemical signals into predictions of what makes a better glass.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>pandas</span>
+                            <span>EDA</span>
+                            <span>Data Visualization</span>
+
+                        </div>
+
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/MartaMX/wine_quality_machine_learning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View project
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
         </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="page-container">
+
+
+                <div class="section-header projects-header">
+
+                    <h2>
+                        ABOUT
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    <!-- About copy -->
+
+                    <div class="about-content">
+
+                        <h2>
+                            Bridging business,
+                            product and data to
+                            solve real problems.
+                        </h2>
+
+
+                        <p>
+                            I'm a senior product owner, data analyst and digital transformation professional with 10+ years translating complex business priorities into technology and analytics products. Three years of Product Ownership in infrastructure and sustainability, including product roadmaps, backlog prioritization, data governance, monitoring dashboards, testing, adoption, and delivery with 35+ domain experts and cross-functional teams. Earlier consulting experience includes healthcare and other regulated/operational sectors. Hands-on analytics capability includes Mendix, SQL, Python, Tableau, statistics, A/B testing, data validation, KPI design, and self-service dashboards. Experienced in international, matrix environments and in turning technical complexity into clear business outcomes.
+                        </p>
+
+
+                        <p>
+                            I enjoy turning complex data into clear insights
+                            and practical solutions that create real impact —
+                            from understanding the business problem and
+                            aligning stakeholders to building and delivering
+                            the solution.
+                        </p>
+
+
+
+
+                    </div>
+
+
+
+                    <!-- Skills -->
+
+                    <aside class="skills-panel">
+
+                        <p class="skills-title">
+                            SKILLS & TOOLS
+                        </p>
+
+
+                        <!-- Data -->
+
+                        <div class="skill-category">
+
+                            <h3>
+                                Data & Analytics
+                            </h3>
+
+
+                            <div class="skill-tags">
+
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>pandas</span>
+                                <span>Statistics</span>
+                                <span>Machine Learning</span>
+                                <span>A/B Testing</span>
+                                <span>Data Visualization</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product -->
+
+                        <div class="skill-category">
+
+                            <h3>
+                                Product & Delivery
+                            </h3>
+
+
+                            <div class="skill-tags">
+
+                                <span>Product Ownership</span>
+                                <span>Agile / Scrum</span>
+                                <span>Requirements</span>
+                                <span>Product Discovery</span>
+                                <span>Stakeholder Management</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Tools -->
+
+                        <div class="skill-category">
+
+                            <h3>
+                                Tools
+                            </h3>
+
+
+                            <div class="skill-tags">
+
+                                <span>Streamlit</span>
+                                <span>Azure</span>
+                                <span>Tableau</span>
+                                <span>Power BI</span>
+                                <span>Git</span>
+                                <span>MySQL</span>
+                                <span>Mendix</span>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             IMPACT
+        ================================================== -->
+
+        <section
+            class="impact-section"
+            id="impact"
+        >
+
+            <div class="page-container">
+
+
+                <div class="section-header projects-header">
+                    <h2>
+                        IMPACT
+                    </h2>
+                </div>
+
+
+
+                <div class="impact-grid">
+
+
+                    <!-- Experience -->
+
+                    <div class="impact-item">
+
+                        <i
+                            class="fa-solid fa-briefcase"
+                            aria-hidden="true"
+                        ></i>
+
+                        <strong>
+                            10+
+                        </strong>
+
+                        <span>
+                            Years of experience
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Data -->
+
+                    <div class="impact-item">
+
+                        <i
+                            class="fa-solid fa-chart-column"
+                            aria-hidden="true"
+                        ></i>
+
+                        <strong>
+                            150K
+                        </strong>
+
+                        <span>
+                            Uber bookings analyzed
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Stakeholders -->
+
+                    <div class="impact-item">
+
+                        <i
+                            class="fa-solid fa-people-group"
+                            aria-hidden="true"
+                        ></i>
+
+                        <strong>
+                            35+
+                        </strong>
+
+                        <span>
+                            Stakeholders
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- International -->
+
+                    <div class="impact-item">
+
+                        <i
+                            class="fa-solid fa-globe"
+                            aria-hidden="true"
+                        ></i>
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <span>
+                            countries<br>
+                            NL · UK · MX · US
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section
+            class="contact-section"
+            id="contact"
+        >
+
+            <div
+                class="contact-shape contact-shape-left"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="contact-shape contact-shape-right"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="page-container contact-content">
+
+                <p class="section-label">
+                    LET'S CONNECT
+                </p>
+
+
+                <h2>
+                    Let's turn data<br>
+                    into <span>what's next.</span>
+                </h2>
+
+
+                <p>
+                    Interested in product, analytics, or the space
+                    where the two meet? Let's talk.
+                </p>
+
+
+                <div class="contact-actions">
+
+                    <!-- Replace with your email address -->
+
+                    <a
+                        class="button button-light"
+                        href="mailto:martaguzmancabrera@gmail.com"
+                    >
+                        Get in touch
+                        <span>→</span>
+                    </a>
+
+
+                    <a
+                        class="contact-social"
+                        href="https://linkedin.com/in/martaguzmancabrera"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+
+                    <a
+                        class="contact-social"
+                        href="https://github.com/MartaMX"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
     </main>
 
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="page-container footer-content">
+
+            <p>
+                © 2026 Marta Guzmán
+            </p>
+
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+
+
 </body>
+
+</html>
+
 </html>
